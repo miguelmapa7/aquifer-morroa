@@ -1,15 +1,16 @@
 <template>
-  <hello-world />
+  <div class="windows"><Window /></div>
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
-
-  export default {
-    name: 'Home',
-
-    components: {
-      HelloWorld,
-    },
-  }
+import Window from "../components/Window.vue";
+export default {
+  components: { Window },
+};
 </script>
+
+<style>
+.windows{    
+    height:100%;
+}
+</style>

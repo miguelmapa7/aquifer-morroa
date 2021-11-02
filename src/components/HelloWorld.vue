@@ -93,7 +93,7 @@
 
 <script>
   export default {
-    name: 'HelloWorld',
+    name: 'Aquiefero de Morroa',
 
     data: () => ({
       ecosystem: [
