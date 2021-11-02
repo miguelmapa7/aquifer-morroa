@@ -49,8 +49,8 @@
       return {
         drawer: true,
         items: [
-          { title: 'Inicio', icon: 'mdi-home-city' , id: 'login', method: () => this.login()},
-          { title: 'Nosotros', icon: 'mdi-account' },
+          { title: 'Inicio', icon: 'mdi-home-city' , method: () => this.login()},
+          { title: 'Nosotros', icon: 'mdi-account', method: () => this.about()},
           { title: 'Investigación', icon: 'mdi-animation' },
           { title: 'Desarrollo', icon: 'mdi-apple-keyboard-command' },
           { title: 'Productos', icon: 'mdi-application-braces-outline' },
@@ -65,9 +65,13 @@
     },
     methods: {
         login(){
-            console.log('prueba')
+            console.log('Prueba')
             this.$router.push('/inicio')
-        }
+        },
+        about(){
+            console.log('About')
+            this.$router.push('/about')
+        },
     }
   }
 </script>
