@@ -3,6 +3,7 @@
 </template>
 
 <script>
+//
 import Window from "../components/Window.vue";
 export default {
   components: { Window },
@@ -10,6 +11,7 @@ export default {
 </script>
 
 <style>
+
 .windows{    
     height:100%;
 }
