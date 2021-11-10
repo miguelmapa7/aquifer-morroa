@@ -20,6 +20,11 @@ const routes = [
     name: 'About',
     component: () => import('../components/About.vue')
   },
+  {
+    path: '/imagen',
+    name: 'imagen',
+    component: () => import('../components/Imagen.vue')
+  },
 ]
 
 const router = new VueRouter({

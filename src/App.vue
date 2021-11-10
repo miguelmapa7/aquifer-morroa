@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app >
     <v-app-bar app color="primary" dark>
       <div class="d-flex align-center">
         <v-img
@@ -12,19 +12,28 @@
         />
 
         <div class="d-flex align-center">
-          <p class="font-weight-black" id="title">Acuefero de Morroa</p>
+          <p class="font-weight-black" id="title">
+            Repositorio del proyecto IHMoGA
+          </p>
         </div>
       </div>
 
       <v-spacer></v-spacer>
     </v-app-bar>
     <br />
+    
+    <div class="d-flex align-center" id="sub-title">
+      <p class="font-weight-black" >
+        Implementación de herramientas de monitoreo para la gestión de acuíferos en el departamento de Sucre a través del Internet de las Cosas de Nueva Generación
+      </p>
+    </div>
+
     <div id="contenedorTodo">
       <div id="contenedorUno">
         <Menu />
       </div>
       <div id="contenedorDos">
-        <v-main>
+        <v-main >
           <router-view />
         </v-main>
       </div>
@@ -55,12 +64,26 @@ export default {
   font-size: 30px;
   margin-top: 15px;
 }
+#sub-title {
+  font-size: 20px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 90px;
+  /*background-color: aliceblue;*/
+}
 #contenedorTodo {
-  width: 100%;  
-  display:flex;
+  width: 100%;
+  display: flex;
+  /*background-color: aqua;*/
 }
 #contenedorDos {
-  width: 90%; 
-  margin-left: 30px; 
+  width: 90%;
+  margin-left: 30px;
+  /*background-color: rgb(115, 255, 0);*/
+  margin-bottom: 30px;
+}
+#contenedorUno {
+  /*background-color: rgb(255, 174, 0);*/
+  margin-left: 5px;
 }
 </style>
