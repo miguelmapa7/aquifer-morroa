@@ -1,6 +1,6 @@
 <template>
-  <v-app >
-    <v-app-bar app color="primary" dark>
+  <v-app>
+    <v-app-bar app color="" dark>
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -17,28 +17,29 @@
           </p>
         </div>
       </div>
-
-      <v-spacer></v-spacer>
     </v-app-bar>
     <br />
-    
-    <div class="d-flex align-center" id="sub-title">
-      <p class="font-weight-black" >
-        Implementación de herramientas de monitoreo para la gestión de acuíferos en el departamento de Sucre a través del Internet de las Cosas de Nueva Generación
-      </p>
-    </div>
+    <div class="col" >
+      <div class="d-flex align-center" id="sub-title" >
+        <p class="font-weight-black">
+          Implementación de herramientas de monitoreo para la gestión de
+          acuíferos en el departamento de Sucre a través del Internet de las
+          Cosas de Nueva Generación
+        </p>
+      </div>
 
-    <div id="contenedorTodo">
-      <div id="contenedorUno">
-        <Menu />
+      <div id="contenedorTodo" >
+        <div id="contenedorUno">
+          <Menu />
+        </div>
+        <div id="contenedorDos">
+          <v-main>
+            <router-view />
+          </v-main>
+        </div>
       </div>
-      <div id="contenedorDos">
-        <v-main >
-          <router-view />
-        </v-main>
-      </div>
+      <br />
     </div>
-    <br />
     <Footer />
   </v-app>
 </template>
@@ -65,8 +66,8 @@ export default {
   margin-top: 15px;
 }
 #sub-title {
-  font-size: 20px;
-  margin-top: 50px;
+  font-size: 18px;
+  margin-top: 45px;
   margin-left: 50px;
   margin-right: 90px;
   /*background-color: aliceblue;*/
@@ -80,7 +81,8 @@ export default {
   width: 90%;
   margin-left: 30px;
   /*background-color: rgb(115, 255, 0);*/
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  margin-top: 1px;
 }
 #contenedorUno {
   /*background-color: rgb(255, 174, 0);*/

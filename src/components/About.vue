@@ -1,8 +1,8 @@
 <template>
   <div class="row" id="cards">
     <div class="col-4" v-for="item in items" :key="item.name">
-      <v-card class="mx-auto" max-width="344" id="card">
-        <v-img :src="item.image" max-height="340" class="grey darken-4"></v-img>
+      <v-card class="mx-auto" max-width="300" id="card">
+        <v-img :src="item.image" contain max-height="250" class="write write-4"></v-img>
 
         <v-card-title> {{ item.name }}</v-card-title>
 

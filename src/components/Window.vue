@@ -1,10 +1,20 @@
 <template>
   <v-card flat tile>
     <v-window v-model="onboarding" reverse>
-      <v-window-item v-for="n in length" :key="`card-${n}`">
-        <v-card color="grey" height="200">
-          <v-row class="fill-height" align="center" justify="center">
-            <h1 style="font-size: 5rem" class="white--text">Slide {{ n }}</h1>
+      <v-window-item v-for="item in items" 
+      :key="item.name">
+        <v-card color="" >
+          <h2 class="" align="center">{{item.name}}</h2>
+          <v-row class="fill-height" align="center" justify="center" >            
+            <br />
+            <v-img
+              style="margin: 1%"
+              height="380"
+              :src="item.image"
+              aspect-ratio="1"
+              class=" lighten-2"
+              contain
+            ></v-img>
           </v-row>
         </v-card>
       </v-window-item>
@@ -37,6 +47,20 @@ export default {
   data: () => ({
     length: 3,
     onboarding: 0,
+    items: [
+      {
+        name: "Groundwater Recharge",
+        image: require("@/assets/1.jpg"),
+      },
+      {
+        name: "Underneath treasure-Groundwater",
+        image: require("@/assets/2.jpeg"),
+      },
+      {
+        name: "Aktun Chen Park",
+        image: require("@/assets/3.jpg"),
+      },
+      ],
   }),
 
   methods: {
